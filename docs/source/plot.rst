@@ -5,6 +5,7 @@ emr_analysis.plot
 
 summary
 -------
+Temporary function
 
 .. _ind_summary:
 
