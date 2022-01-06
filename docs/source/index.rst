@@ -1,22 +1,23 @@
-Welcome to Lumache's documentation!
-===================================
+simulated-emr-analysis Documentation
+====================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**emr_analysis** is a Python package used for high-level analysis of Electronic Medical Records (EMR) \
+that can give the user basic summaries of information that they may need when analysing medical record data
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+Example data is provided by emrbots.org
+
+The :doc:`quickstart` section can be used for a quick guide to get up and running
 
 .. note::
 
    This project is under active development.
+
 
 Contents
 --------
 
 .. toctree::
 
-   usage
-   api
+   quickstart
+   emr_analysis.data
+   emr_analysis.plot
