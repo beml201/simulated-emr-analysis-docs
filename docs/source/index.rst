@@ -19,5 +19,5 @@ Contents
 .. toctree::
 
    quickstart
-   emr_analysis.data
-   emr_analysis.plot
+   data
+   plot
