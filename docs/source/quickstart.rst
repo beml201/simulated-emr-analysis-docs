@@ -13,7 +13,8 @@ simluated-emr-analysis can be installed through pip or conda:
    (.venv) $ pip install simulated-emr-analysis
 
 or
-.. code_block::console
+
+.. code-block::console
 
    (.venv) $ conda install simulated-emr-analysis
 

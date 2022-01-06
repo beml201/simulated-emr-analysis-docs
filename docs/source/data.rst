@@ -1,6 +1,8 @@
 emr_analysis.data
 =================
 
+.. _load_example:
+
 load_example
 ------------
 Function loads the example data provided by emrbots.org in a dictionary format
@@ -19,6 +21,8 @@ The keys are:
 +-------------------------------------------+
 
 User data will be able to be formatted into the same form as this for use with the package at a later date
+
+.. _load:
 
 load
 ----

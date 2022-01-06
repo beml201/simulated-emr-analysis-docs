@@ -1,8 +1,12 @@
 emr_analysis.plot
 =================
 
+.. _summary:
+
 summary
 -------
+
+.. _ind_summary:
 
 ind_summary
 -----------
