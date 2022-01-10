@@ -23,3 +23,4 @@ Contents
    quickstart
    data
    plot
+   summ
