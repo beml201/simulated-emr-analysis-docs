@@ -1,39 +1,39 @@
 emr_analysis.summary
 ====================
 
-
 .. _SummaryInformation:
 
+summary.SummaryInformation
+--------------------------
 *class* summary.SummaryInformation(dfs=None)
---------------------------------------------
 
 Parameters
 """"""""""
-    *Init()*
+    *__init__(dfs: dict)*
         *dict* dfs:
             A dictionary created by the ``data.Loader()`` that contains all the relevant pandas dataframes for analysis.
 
-methods
+Methods
 """""""
 
 .. _admissions_plot:
 
-admissions_plot(from_date=None, to_date=None)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+admissions_plot()
+^^^^^^^^^^^^^^^^^
 
-**Parameters**
-  *str* from_date:
-      *Defaults to* ``None``
-      The date from which the plot will start from.
-      If ``None`` the plot will start from the minimum date in the dataset.
-  *str* to_date:
-      *Defaults to* ``None``
-      The date from which the plot will end at.
-      If ``None`` the plot will end at the maximum date in the dataset.
+   **Parameters**
+     *str* from_date:
+         *Defaults to* ``None``
+         The date from which the plot will start from.
+         If ``None`` the plot will start from the minimum date in the dataset.
+     *str* to_date:
+         *Defaults to* ``None``
+         The date from which the plot will end at.
+         If ``None`` the plot will end at the maximum date in the dataset.
 
-**Returns**
-    *(fig, ax)*
-        Returns a tuple that containts the matplotlib.figure.Figure and matplotlib.axes.Axes for the plot.
+   **Returns**
+       *(fig, ax)*
+           Returns a tuple that containts the matplotlib.figure.Figure and matplotlib.axes.Axes for the plot.
 
 Example:
 
@@ -50,9 +50,9 @@ Provides a time series graph of the number admitted patients in each year.
 admission_time_plot()
 ^^^^^^^^^^^^^^^^^^^^^
 
-**Returns**
-    *(fig, ax)*
-        Returns a tuple that containts the matplotlib.figure.Figure and matplotlib.axes.Axes for the plot.
+   **Returns**
+       *(fig, ax)*
+           Returns a tuple that containts the matplotlib.figure.Figure and matplotlib.axes.Axes for the plot.
 
 Example:
 
@@ -66,22 +66,22 @@ Provides a a histogram plot of the frequency of times spent in admission.
 
 .. _lab_summary:
 
-lab_summary(from_date=None, to_date=None)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lab_summary()
+^^^^^^^^^^^^^
 
-**Parameters**
-  *str* from_date:
-      *Defaults to* ``None``
-      The date from which the plot will start from.
-      If ``None`` the plot will start from the minimum date in the dataset.
-  *str* to_date:
-      *Defaults to* ``None``
-      The date from which the plot will end at.
-      If ``None`` the plot will end at the maximum date in the dataset.
+   **Parameters**
+     *str* from_date:
+         *Defaults to* ``None``
+         The date from which the plot will start from.
+         If ``None`` the plot will start from the minimum date in the dataset.
+     *str* to_date:
+         *Defaults to* ``None``
+         The date from which the plot will end at.
+         If ``None`` the plot will end at the maximum date in the dataset.
 
-**Returns**
-    *DataFrame*
-        Returns a pandas.DataFrame
+   **Returns**
+       *DataFrame*
+           Returns a pandas.DataFrame
 
 Example:
 
@@ -98,9 +98,9 @@ Provides a table of summary statistics of lab values for each lab type including
 lab_plot()
 ^^^^^^^^^^
 
-**Returns**
-    *{str:(fig, ax),...}*
-        Returns a dictionary that contains the matplotlib.figure.Figure and matplotlib.axes.Axes.
+   **Returns**
+       *{str:(fig, ax),...}*
+           Returns a dictionary that contains the matplotlib.figure.Figure and matplotlib.axes.Axes.
 
 Example:
 
@@ -118,9 +118,9 @@ Provides multiple figures containing histogram plots of lab values for every lab
 personal_plot()
 ^^^^^^^^^^^^^^^
 
-**Returns**
-    *(fig, ax)*
-        Returns a tuple that containts the matplotlib.figure.Figure and matplotlib.axes.Axes for the plot.
+   **Returns**
+       *(fig, ax)*
+           Returns a tuple that containts the matplotlib.figure.Figure and matplotlib.axes.Axes for the plot.
 
 Example:
 
