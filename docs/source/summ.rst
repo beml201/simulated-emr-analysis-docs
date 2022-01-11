@@ -1,15 +1,15 @@
 emr_analysis.summary
 ====================
 
-
 .. _SummaryInformation:
 
+summary.SummaryInformation
+--------------------------
 *class* summary.SummaryInformation(dfs=None)
---------------------------------------------
 
 Parameters
 """"""""""
-    *Init()*
+    *__init__(dfs: dict)*
         *dict* dfs:
             A dictionary created by the ``data.Loader()`` that contains all the relevant pandas dataframes for analysis.
 
@@ -18,8 +18,8 @@ methods
 
 .. _admissions_plot:
 
-admissions_plot(from_date=None, to_date=None)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+admissions_plot()
+^^^^^^^^^^^^^^^^^
 
 **Parameters**
   *str* from_date:
@@ -66,8 +66,8 @@ Provides a a histogram plot of the frequency of times spent in admission.
 
 .. _lab_summary:
 
-lab_summary(from_date=None, to_date=None)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lab_summary()
+^^^^^^^^^^^^^
 
 **Parameters**
   *str* from_date:
