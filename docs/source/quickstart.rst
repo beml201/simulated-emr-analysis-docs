@@ -35,4 +35,4 @@ If you want individual summary information, that can be done using:
 >>> individuals = emr.plot.IndSummary(dfs)
 >>> patient1 = individuals('1A8791E3-A61C-455A-8DEE-763EB90C9B2C', browser=True)
 
-If you need help finding a patient ID, use :ref:`_QuickSearch` to help you.
+If you need help finding a patient ID, use *QuickSearch* in the :doc:`plot` module to help you.
