@@ -3,21 +3,86 @@ emr_analysis.summ
 
 .. _SummaryInformation:
 
-SummaryPlot
+.. _admissions_plot:
+
+admissions_plot
 -----------
-Provides a matplotlib.plt bar chart plot of the number of admissions in each year. By default ``start_date=None`` and ``to_date=None`` which sets the start and end dates of the plot to be the minimum and maximum dates in the dataset.
 
-.. _admission_time_diff_summary:
+**Parameters**
+  *str* from_date:
+      *Defaults to ``None``*
+      The date from which the plot will start from.
+      If ``None`` the plot will start from the minimum date in the dataset.
+  *str* to_date:
+      *Defaults to ``None``*
+      The date from which the plot will end at.
+      If ``None`` the plot will end at the maximum date in the dataset.
 
-admission_time_diff_summary
+**Returns**
+    *(fig, ax)*
+        Returns a tuple that containts the matplotlib.figure.Figure and matplotlib.axes.Axes for the plot.
+
+Example:
+
+.. code-block:: console
+
+>>> import emr_analysis as emr
+>>> summ_info = emr.summary.SummaryInformation(dfs)
+>>> plot = summ_info.admissions_plot()
+>>> plot[0].show()
+
+Provides a time series graph of the number admitted patients in each year.
+
+.. _admission_time_plot:
+
+admission_time_plot
 ---------------------------
-Constructs a multiple matplotlib.Figure.figure containg a single histogram plot of the frequencies of time spent in admission.
+
+**Returns**
+    *(fig, ax)*
+        Returns a tuple that containts the matplotlib.figure.Figure and matplotlib.axes.Axes for the plot.
+
+Example:
+
+.. code-block:: console
+
+>>> import emr_analysis as emr
+>>> summ_info = emr.summary.SummaryInformation(dfs)
+>>> plot = summ_info.admission_time_plot()
+>>> plot[0].show()
+
+Provides a a histogram plot of the frequency of times spent in admission.
 
 .. _lab_summary:
 
 lab_summary
 -----------
-Constructs a pandas dataframe containing summary statistics for each lab test's values including; count, mean, standard devation, minimum value, 25% percentile, 50% percentile, 75% percentile, maximum value.
+
+**Parameters**
+  *str* from_date:
+      *Defaults to ``None``*
+      The date from which the plot will start from.
+      If ``None`` the plot will start from the minimum date in the dataset.
+  *str* to_date:
+      *Defaults to ``None``*
+      The date from which the plot will end at.
+      If ``None`` the plot will end at the maximum date in the dataset.
+
+**Returns**
+    *DataFrame*
+        Returns a pandas.DataFrame
+
+Example:
+
+.. code-block:: console
+
+>>> import emr_analysis as emr
+>>> summ_info = emr.summary.SummaryInformation(dfs)
+>>> lab_stats = lab_summary()
+>>> lab_stats
+
+Provides a table of summary statistics of lab values for each lab type including; count, mean, standard deviation, minimum value, quartiles, and maximum value.
+
 
 .. _lab_plot:
 
@@ -25,9 +90,39 @@ lab_plot
 --------
 Constructs multiple matplotlib.Figure.figure's containing histograms for the labvalues of each labtype, seperated by the general area of the lab type (e.g. cbc, urinary, metabolic...), that are contained in a dictionary.
 
+**Returns**
+    *{str:(fig, ax),...}*
+        Returns a dictionary that contains the matplotlib.figure.Figure and matplotlib.axes.Axes.
+
+Example:
+
+.. code-block:: console
+
+>>> import emr_analysis as emr
+>>> summ_info = emr.summary.SummaryInformation(dfs)
+>>> plots = summ_info.lab_plot()
+>>> plots.keys()
+>>> plots['CBC'][0].show()
+
+Provides multiple figures containing histogram plots of lab values for every lab type, seperated into subcatagories.
+
 
 .. _personal_plot:
 
 personal_plot
 -------------
-Constructs a matplotlib.Figure.figure containing bar charts that display the counts for patient gender, race, marital status and language.
+
+**Returns**
+    *(fig, ax)*
+        Returns a tuple that containts the matplotlib.figure.Figure and matplotlib.axes.Axes for the plot.
+
+Example:
+
+.. code-block:: console
+
+>>> import emr_analysis as emr
+>>> summ_info = emr.summary.SummaryInformation(dfs)
+>>> plot = summ_info._personal_plot()
+>>> plot[0].show()
+
+Provides a figure containing bar chart plots for the count of patient gender, race, marital status and language.
