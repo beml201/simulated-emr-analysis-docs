@@ -6,8 +6,8 @@ emr_analysis.plot
 IndSummary *class*
 ------------------
 ***IndSummary*** provides a summary of a specific patient. It returns a dictionary of a pandas dataframe of characteristics, 
-with key=``'info'``, and a dictionary of plots, with key=``'plots'``.
-To view the plots, ``.show()``should be used to open them in a new browser page.
+with key= ``'info'`` , and a dictionary of plots, with key= ``'plots'`` .
+To view the plots, ``.show()`` should be used to open them in a new browser page.
 See the example for how to use.
 Set ``browser=True`` to open the summary of the patient in a local webpage.
 Plots output is done in plotly and can be interacted with, including tooltips and zooming.
