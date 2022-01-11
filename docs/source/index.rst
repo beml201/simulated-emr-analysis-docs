@@ -12,7 +12,7 @@ The :doc:`quickstart` section can be used for a quick guide to get up and runnin
 
 .. note::
 
-   This project is for the Health Data Science MSc course and is still under development.
+   This package has been made for a course project and is still under development.
 
 
 Contents
