@@ -1,5 +1,5 @@
 emr_analysis.summary
-=================
+====================
 
 
 .. _SummaryInformation:
