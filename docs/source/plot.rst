@@ -19,15 +19,16 @@ IndSummary
         The ID of the patient whose data and summary should be returned
 
     *bool* browser:
-        *Defaults to ``False``*
+        *Defaults to "False"*
         If ``True`` will open a new window in the default browser of the user
         Will also return the resulting dictionary (see *Returns*)
         If ``False``will just return the resulting dictionary (see *Returns*)
-        
+
     *int* port:
-        * Defaults to ``8050``*
+        * Defaults to "8050"*
         Changes the port for the Dash server to open in. Only works when ``browser=True```
         Does not check if port is already opening
+
 
 ***Returns***
 ~~~~~~~~~~~~~
@@ -48,6 +49,8 @@ Provides a summary of a specific patient as both text and a graph
 set ``browser=True`` to open the interactive graphs of the patients lab values in a plotly server
 
 .. _QuickSearch:
----------------
+
+QuickSearch
+-----------
 
 A quick filter system that can help users find specific patients using known characteristics
