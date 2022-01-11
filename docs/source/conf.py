@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'simulated-emr-analysis'
+project = 'emr-analysis'
 copyright = '2022, Ankit Arni, Brandon Lim, Luke Davies'
 author = 'Ankit Arni, Brandon Lim, Luke Davies'
 

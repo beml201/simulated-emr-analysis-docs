@@ -1,4 +1,4 @@
-simulated-emr-analysis Documentation
+emr-analysis Documentation
 ====================================
 
 Current version **0.1.1**
