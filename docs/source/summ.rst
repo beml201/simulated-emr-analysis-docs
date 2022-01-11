@@ -21,6 +21,8 @@ Methods
 admissions_plot()
 ^^^^^^^^^^^^^^^^^
 
+Provides a time series graph of the number admitted patients in each year.
+
    **Parameters**
      *str* from_date:
          *Defaults to* ``None``
@@ -42,13 +44,13 @@ Example:
 >>> plot = summ_info.admissions_plot()
 >>> plot[0].show()
 
-Provides a time series graph of the number admitted patients in each year.
-
 
 .. _admission_time_plot:
 
 admission_time_plot()
 ^^^^^^^^^^^^^^^^^^^^^
+
+Provides a a histogram plot of the frequency of times spent in admission.
 
    **Returns**
        *(fig, ax)*
@@ -61,13 +63,13 @@ Example:
 >>> plot = summ_info.admission_time_plot()
 >>> plot[0].show()
 
-Provides a a histogram plot of the frequency of times spent in admission.
-
 
 .. _lab_summary:
 
 lab_summary()
 ^^^^^^^^^^^^^
+
+Provides a table of summary statistics of lab values for each lab type including; count, mean, standard deviation, minimum value, quartiles, and maximum value.
 
    **Parameters**
      *str* from_date:
@@ -90,13 +92,13 @@ Example:
 >>> lab_stats = summ_info.lab_summary()
 >>> lab_stats
 
-Provides a table of summary statistics of lab values for each lab type including; count, mean, standard deviation, minimum value, quartiles, and maximum value.
-
 
 .. _lab_plot:
 
 lab_plot()
 ^^^^^^^^^^
+
+Provides multiple figures containing histogram plots of lab values for every lab type, seperated into subcatagories.
 
    **Returns**
        *{str:(fig, ax),...}*
@@ -110,13 +112,13 @@ Example:
 >>> plots.keys()
 >>> plots['CBC'][0].show()
 
-Provides multiple figures containing histogram plots of lab values for every lab type, seperated into subcatagories.
-
 
 .. _personal_plot:
 
 personal_plot()
 ^^^^^^^^^^^^^^^
+
+Provides a figure containing bar chart plots for the count of patient gender, race, marital status and language.
 
    **Returns**
        *(fig, ax)*
@@ -129,4 +131,3 @@ Example:
 >>> plot = summ_info._personal_plot()
 >>> plot[0].show()
 
-Provides a figure containing bar chart plots for the count of patient gender, race, marital status and language.
