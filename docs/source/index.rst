@@ -8,11 +8,11 @@ that can give the user basic summaries of information that they may need when an
 
 Example data is provided by emrbots.org
 
-The :doc:`quickstart` section can be used for a quick guide to get up and running
+The :doc:`quickstart` section can be used for a quick guide to get up and running including installation and use
 
 .. note::
 
-   This project is under active development.
+   This project is for the Health Data Science MSc course and is still under development.
 
 
 Contents
@@ -23,3 +23,4 @@ Contents
    quickstart
    data
    plot
+   issues
