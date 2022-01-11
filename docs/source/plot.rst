@@ -6,15 +6,16 @@ emr_analysis.plot
 IndSummary
 ----------
 
-|***Parameters***
-~~~~~~~~~~~~~~~~~
-|**Init**
+Parameters
+^^^^^^^^^^
+|Init
+#####
 
     dict *dfs*:
         A dictionary created by the ```data.Loader()``` that contains all the relevant pandas dataframes for analysis
 
-|**Call**
-
+|Call
+#####
     str *patient_id*:
         The ID of the patient whose data and summary should be returned
 
@@ -30,8 +31,8 @@ IndSummary
         Does not check if port is already opening
 
 
-|***Returns***
-~~~~~~~~~~~~~~
+Returns
+^^^^^^^
     dict
         Returns a dictionary that containts the patients characteristics and some plots about their previous lab data
 
