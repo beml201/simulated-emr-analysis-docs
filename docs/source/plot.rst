@@ -14,30 +14,30 @@ See the example for how to use.
 Set ``browser=True`` to open the summary of the patient in a local webpage.
 Plots output is done in plotly and can be interacted with, including tooltips and zooming.
 
-**Parameters**
-    *__init__(dfs: dict)*
-        *dict* dfs:
-            A dictionary created by the ``data.Loader()`` that contains all the relevant pandas dataframes for analysis.
-    *__call__(patient_id: str, browser:bool, port:int)*
-        *str* patient_id:
-            The ID of the patient whose data and summary should be returned
-        *bool* browser:
-            Defaults to ``False``.
-            If ``True`` will open a new window in the default browser of the user.
-            Will also return the resulting dictionary (see ***Returns***).
-            If ``False`` will just return the resulting dictionary (see ***Returns***).
-        *int* port:
-            Defaults to 8050.
-            Changes the port for the Dash server to open in. Only works when ``browser=True``.
-            Does not check if port is already open.
+    **Parameters**
+        *__init__(dfs: dict)*
+            *dict* dfs:
+                A dictionary created by the ``data.Loader()`` that contains all the relevant pandas dataframes for analysis.
+        *__call__(patient_id: str, browser:bool, port:int)*
+            *str* patient_id:
+                The ID of the patient whose data and summary should be returned
+            *bool* browser:
+                Defaults to ``False``.
+                If ``True`` will open a new window in the default browser of the user.
+                Will also return the resulting dictionary (see ***Returns***).
+                If ``False`` will just return the resulting dictionary (see ***Returns***).
+            *int* port:
+                Defaults to 8050.
+                Changes the port for the Dash server to open in. Only works when ``browser=True``.
+                Does not check if port is already open.
 
-**Returns**
-    *dict*
-        A dictionary that contains the patients characteristics in ``['info']`` 
-        and some plots about their previous lab data in ``['plots']``.
-        *plots* is a dictionary of the different lab values of the data.
-        There are three main lab values measured: *CBC, METABOLIC or URINALYSIS*.
-        See the example for how to use.
+    **Returns**
+        *dict*
+            A dictionary that contains the patients characteristics in ``['info']`` 
+            and some plots about their previous lab data in ``['plots']``.
+            *plots* is a dictionary of the different lab values of the data.
+            There are three main lab values measured: *CBC, METABOLIC or URINALYSIS*.
+            See the example for how to use.
 
 Example:
 
@@ -63,18 +63,18 @@ It will open a new browser window in which you can quickly adjust parameters to 
 Parameters include: *sex, year of birth, race, marital status, language, number of admissions and known primary diagnosis codes*.
 QuickSearch does not currently have functionality 
 
-**Parameters**
-    *__init__(dfs: dict)*
-        *dict* dfs:
-            A dictionary created by the ``data.Loader()`` that contains all the relevant pandas dataframes for analysis.
-    *__call__(port: int)*
-        *int* port:
-            Defaults to 8050
-            Changes the port for the Dash server to open in.
-            Does not check if port is already open.
+    **Parameters**
+        *__init__(dfs: dict)*
+            *dict* dfs:
+                A dictionary created by the ``data.Loader()`` that contains all the relevant pandas dataframes for analysis.
+        *__call__(port: int)*
+            *int* port:
+                Defaults to 8050
+                Changes the port for the Dash server to open in.
+                Does not check if port is already open.
 
-**Returns**
-    *None*
+    **Returns**
+        *None*
 
 Example:
 
