@@ -4,11 +4,22 @@ emr_analysis.summary
 
 .. _SummaryInformation:
 
+*class* summary.SummaryInformation(dfs=None)
+--------------------------------------------
+
+Parameters
+""""""""""
+    *Init()*
+        *dict* dfs:
+            A dictionary created by the ``data.Loader()`` that contains all the relevant pandas dataframes for analysis.
+
+methods
+"""""""
 
 .. _admissions_plot:
 
-admissions_plot
----------------
+admissions_plot(from_date=None, to_date=None)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Parameters**
   *str* from_date:
@@ -36,8 +47,8 @@ Provides a time series graph of the number admitted patients in each year.
 
 .. _admission_time_plot:
 
-admission_time_plot
--------------------
+admission_time_plot()
+^^^^^^^^^^^^^^^^^^^^^
 
 **Returns**
     *(fig, ax)*
@@ -55,8 +66,8 @@ Provides a a histogram plot of the frequency of times spent in admission.
 
 .. _lab_summary:
 
-lab_summary
------------
+lab_summary(from_date=None, to_date=None)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Parameters**
   *str* from_date:
@@ -84,9 +95,8 @@ Provides a table of summary statistics of lab values for each lab type including
 
 .. _lab_plot:
 
-lab_plot
---------
-Constructs multiple matplotlib.Figure.figure's containing histograms for the labvalues of each labtype, seperated by the general area of the lab type (e.g. cbc, urinary, metabolic...), that are contained in a dictionary.
+lab_plot()
+^^^^^^^^^^
 
 **Returns**
     *{str:(fig, ax),...}*
@@ -105,8 +115,8 @@ Provides multiple figures containing histogram plots of lab values for every lab
 
 .. _personal_plot:
 
-personal_plot
--------------
+personal_plot()
+^^^^^^^^^^^^^^^
 
 **Returns**
     *(fig, ax)*
