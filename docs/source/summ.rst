@@ -1,12 +1,14 @@
-emr_analysis.summ
+emr_analysis.summary
 =================
 
+
 .. _SummaryInformation:
+
 
 .. _admissions_plot:
 
 admissions_plot
------------
+---------------
 
 **Parameters**
   *str* from_date:
@@ -33,10 +35,11 @@ Example:
 
 Provides a time series graph of the number admitted patients in each year.
 
+
 .. _admission_time_plot:
 
 admission_time_plot
----------------------------
+-------------------
 
 **Returns**
     *(fig, ax)*
@@ -52,6 +55,7 @@ Example:
 >>> plot[0].show()
 
 Provides a a histogram plot of the frequency of times spent in admission.
+
 
 .. _lab_summary:
 
