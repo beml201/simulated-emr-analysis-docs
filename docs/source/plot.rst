@@ -3,8 +3,8 @@ emr_analysis.plot
 
 .. _IndSummary:
 
-IndSummary
-----------
+IndSummary *class*
+------------------
 Provides a summary of a specific patient as both text and a graph
 set ``browser=True`` to open the interactive graphs of the patients lab values in a plotly server
 
@@ -27,7 +27,7 @@ set ``browser=True`` to open the interactive graphs of the patients lab values i
 
 **Returns**
     *dict*
-        Returns a dictionary that containts the patients characteristics and some plots about their previous lab data
+        Returns a dictionary that contains the patients characteristics and some plots about their previous lab data
 
 Example:
 
@@ -39,10 +39,13 @@ Example:
 
 .. _QuickSearch:
 
-QuickSearch
------------
+QuickSearch *class*
+-------------------
 
-A quick filter system that can help users find specific patients using known characteristics
+***QuickSearch*** is a utility to quickly search through the EMR dataframes passed into it.
+It will open a new browser window in which you can quickly adjust parameters to search through the dataframes.
+Parameters include: *sex, year of birth, race, marital status, language, number of asmissions and known primary diagnosis codes*
+
 
 **Parameters**
     *Init()*
@@ -51,9 +54,14 @@ A quick filter system that can help users find specific patients using known cha
     *Call()*
         *int* port:
             Defaults to 8050
-            Changes the port for the Dash server to open in. Only works when ``browser=True``
+            Changes the port for the Dash server to open in.
             Does not check if port is already opening
 
 **Returns**
-    *dict*
-        Returns a dictionary that containts th
+    *None*
+
+Example:
+
+>>> import emr_analysis as emr
+>>> search = emr.plot.QuickSearch(dfs)
+>>> search()
