@@ -69,7 +69,7 @@ QuickSearch does not currently have functionality
                 A dictionary created by the ``data.Loader()`` that contains all the relevant pandas dataframes for analysis.
         *__call__(port: int)*
             *int* port:
-                Defaults to 8050
+                Defaults to 8050.
                 Changes the port for the Dash server to open in.
                 Does not check if port is already open.
 
