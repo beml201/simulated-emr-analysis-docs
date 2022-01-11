@@ -82,7 +82,7 @@ Example:
 
 >>> import emr_analysis as emr
 >>> summ_info = emr.summary.SummaryInformation(dfs)
->>> lab_stats = lab_summary()
+>>> lab_stats = summ_info.lab_summary()
 >>> lab_stats
 
 Provides a table of summary statistics of lab values for each lab type including; count, mean, standard deviation, minimum value, quartiles, and maximum value.
