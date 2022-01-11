@@ -23,4 +23,5 @@ Contents
    quickstart
    data
    plot
+   summ
    issues
