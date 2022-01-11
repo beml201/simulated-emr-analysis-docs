@@ -12,11 +12,11 @@ admissions_plot
 
 **Parameters**
   *str* from_date:
-      *Defaults to ``None``*
+      *Defaults to* ``None``
       The date from which the plot will start from.
       If ``None`` the plot will start from the minimum date in the dataset.
   *str* to_date:
-      *Defaults to ``None``*
+      *Defaults to* ``None``
       The date from which the plot will end at.
       If ``None`` the plot will end at the maximum date in the dataset.
 
@@ -25,8 +25,6 @@ admissions_plot
         Returns a tuple that containts the matplotlib.figure.Figure and matplotlib.axes.Axes for the plot.
 
 Example:
-
-.. code-block:: console
 
 >>> import emr_analysis as emr
 >>> summ_info = emr.summary.SummaryInformation(dfs)
@@ -47,8 +45,6 @@ admission_time_plot
 
 Example:
 
-.. code-block:: console
-
 >>> import emr_analysis as emr
 >>> summ_info = emr.summary.SummaryInformation(dfs)
 >>> plot = summ_info.admission_time_plot()
@@ -64,11 +60,11 @@ lab_summary
 
 **Parameters**
   *str* from_date:
-      *Defaults to ``None``*
+      *Defaults to* ``None``
       The date from which the plot will start from.
       If ``None`` the plot will start from the minimum date in the dataset.
   *str* to_date:
-      *Defaults to ``None``*
+      *Defaults to* ``None``
       The date from which the plot will end at.
       If ``None`` the plot will end at the maximum date in the dataset.
 
@@ -77,8 +73,6 @@ lab_summary
         Returns a pandas.DataFrame
 
 Example:
-
-.. code-block:: console
 
 >>> import emr_analysis as emr
 >>> summ_info = emr.summary.SummaryInformation(dfs)
@@ -100,8 +94,6 @@ Constructs multiple matplotlib.Figure.figure's containing histograms for the lab
 
 Example:
 
-.. code-block:: console
-
 >>> import emr_analysis as emr
 >>> summ_info = emr.summary.SummaryInformation(dfs)
 >>> plots = summ_info.lab_plot()
@@ -121,8 +113,6 @@ personal_plot
         Returns a tuple that containts the matplotlib.figure.Figure and matplotlib.axes.Axes for the plot.
 
 Example:
-
-.. code-block:: console
 
 >>> import emr_analysis as emr
 >>> summ_info = emr.summary.SummaryInformation(dfs)
