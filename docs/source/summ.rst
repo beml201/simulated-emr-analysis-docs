@@ -11,24 +11,23 @@ Provides a matplotlib.plt bar chart plot of the number of admissions in each yea
 
 admission_time_diff_summary
 ---------------------------
-
-Provides a matplotlib.plt histogram plot of the frequency of admission times in the dataset.
+Constructs a multiple matplotlib.Figure.figure containg a single histogram plot of the frequencies of time spent in admission.
 
 .. _lab_summary:
 
 lab_summary
 -----------
-Provides a table containing summary statistics for each lab test's values including; count, mean, standard devation, minimum value, 25% percentile, 50% percentile, 75% percentile, maximum value.
+Constructs a pandas dataframe containing summary statistics for each lab test's values including; count, mean, standard devation, minimum value, 25% percentile, 50% percentile, 75% percentile, maximum value.
 
 .. _lab_plot:
 
 lab_plot
 --------
-Provides a dictionary containing matplotlib.plt histogram plots for each lab type (e.g. cbc, urinary, metabolic...).
+Constructs multiple matplotlib.Figure.figure's containing histograms for the labvalues of each labtype, seperated by the general area of the lab type (e.g. cbc, urinary, metabolic...), that are contained in a dictionary.
 
 
 .. _personal_plot:
 
 personal_plot
 -------------
-Provides a set of matplotlib.plt bar chart plots for patient's gender, race, marital status and language.
+Constructs a matplotlib.Figure.figure containing bar charts that display the counts for patient gender, race, marital status and language.
