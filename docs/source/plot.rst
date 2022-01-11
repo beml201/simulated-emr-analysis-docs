@@ -3,8 +3,10 @@ emr_analysis.plot
 
 .. _IndSummary:
 
-IndSummary *class*
-------------------
+plot.IndSummary
+---------------
+*class* plot.IndSummary(dfs = None)
+
 ***IndSummary*** provides a summary of a specific patient. It returns a dictionary of a pandas dataframe of characteristics, 
 with key= ``'info'`` , and a dictionary of plots, with key= ``'plots'`` .
 To view the plots, ``.show()`` should be used to open them in a new browser page.
@@ -13,10 +15,10 @@ Set ``browser=True`` to open the summary of the patient in a local webpage.
 Plots output is done in plotly and can be interacted with, including tooltips and zooming.
 
 **Parameters**
-    *Init()*
+    *__init__(dfs: dict)*
         *dict* dfs:
             A dictionary created by the ``data.Loader()`` that contains all the relevant pandas dataframes for analysis.
-    *Call()*
+    *__call__(patient_id: str, browser:bool, port:int)*
         *str* patient_id:
             The ID of the patient whose data and summary should be returned
         *bool* browser:
@@ -51,8 +53,9 @@ Example:
 
 .. _QuickSearch:
 
-QuickSearch *class*
--------------------
+plot.QuickSearch
+----------------
+*class* plot.QuickSearch(dfs = None)
 
 ***QuickSearch*** is a utility to quickly search through the EMR dataframes passed into it.
 This is especially useful when trying to get a better understanding of the data or when trying to look up a specific patients ID as the EMR data usually does not contain names.
@@ -61,10 +64,10 @@ Parameters include: *sex, year of birth, race, marital status, language, number 
 QuickSearch does not currently have functionality 
 
 **Parameters**
-    *Init()*
+    *__init__(dfs: dict)*
         *dict* dfs:
             A dictionary created by the ``data.Loader()`` that contains all the relevant pandas dataframes for analysis.
-    *Call()*
+    *__call__(port: int)*
         *int* port:
             Defaults to 8050
             Changes the port for the Dash server to open in.
