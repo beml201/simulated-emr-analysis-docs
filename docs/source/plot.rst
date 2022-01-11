@@ -1,31 +1,36 @@
 emr_analysis.plot
 =================
 
-.. _summary:
-
 .. _IndSummary:
 
 IndSummary
 ----------
 
 ***Parameters***
+~~~~~~~~~~~~~~~~
 **Init**
+
     *dict* dfs:
         A dictionary created by the ```data.Loader()``` that contains all the relevant pandas dataframes for analysis
+
 **Call**
+
     *str* patient_id:
         The ID of the patient whose data and summary should be returned
+
     *bool* browser:
         *Defaults to ``False``*
         If ``True`` will open a new window in the default browser of the user
         Will also return the resulting dictionary (see *Returns*)
         If ``False``will just return the resulting dictionary (see *Returns*)
+        
     *int* port:
         * Defaults to ``8050``*
         Changes the port for the Dash server to open in. Only works when ``browser=True```
         Does not check if port is already opening
 
 ***Returns***
+~~~~~~~~~~~~~
     *dict*
         Returns a dictionary that containts the patients characteristics and some plots about their previous lab data
 
