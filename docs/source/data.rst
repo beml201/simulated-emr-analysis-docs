@@ -44,7 +44,7 @@ Methods:
 .. _call:
 
 __call__(load_type = None, input_file_path = '', append = False, dialog = False)
-^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Entry point for the Loader object.
 
