@@ -1,7 +1,7 @@
 emr-analysis Documentation
 ====================================
 
-Current version **0.1.1**
+Current version **0.1.2**
 
 **emr_analysis** is a Python package used for high-level analysis of Electronic Medical Records (EMR) \
 that can give the user basic summaries of information that they may need when analysing medical record data
