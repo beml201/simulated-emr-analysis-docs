@@ -3,8 +3,8 @@ emr_analysis.data
 
 .. _Loader:
 
-data.Loader
------------
+data.Loader:
+------------
 
 *class* data.Loader()
 
@@ -24,8 +24,8 @@ Loads data from a text or zip file, that match the supported EMR content type pa
 | patients     | ``^[Pp]atient[Cc]ore.+\.[Tt][Xx][Tt]``                | ``^[Pp]atient[Ii][Dd].+[Pp]atient(?:[Dd]ate[Oo]f[Bb]irth|[Dd][Oo][Bb]).*`` |
 +--------------+-------------------------------------------------------+----------------------------------------------------------------------------+
 
-Attributes
-""""""""""
+Attributes:
+"""""""""""
 
     *str* EXAMPLE_ZIP_PATH:
         Absolute path of the example zip file "100-Patients.zip".
@@ -38,12 +38,12 @@ Attributes
     *dict[str, dict[str, re.Pattern]]* EMR_PATTERNS:
         Dictionary with the content type as keys and filename/header patterns as values.
 
-Methods
-"""""""
+Methods:
+""""""""
 
-.. ___call__:
+.. _call:
 
-__call__()
+__call__(load_type = None, input_file_path = '', append = False, dialog = False)
 ^^^^^^^^^^^^^^^^^
 
 Entry point for the Loader object.
@@ -63,7 +63,7 @@ Entry point for the Loader object.
             Returns either: (1) a list containing a single tuple of content type and DataFrame, or (2) a dictionary with content type as keys and DataFrame as values.
 
 Examples:
-"""""""
+"""""""""
 
 **Initialisation:**
 
